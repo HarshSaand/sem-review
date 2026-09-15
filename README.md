@@ -90,6 +90,6 @@ A correction must match the original image dimensions. The service validates ima
 
 Machine-readable results are in `artifacts/metrics.json`, with per-image support in `artifacts/test_per_image.csv`. `artifacts/heldout_panels.png` compares held-out inputs, expert masks, U-Net output and the classical baseline. Examples are selected as the median-scoring image in each supported test class plus the lowest-Dice foreground failure; they are not a gallery of only the best cases.
 
-The dataset is heavily imbalanced and comes from one production layer. Centering and electron-framing artifacts can remain shortcuts after border removal. The model may fail on other tools, layers, textures, magnifications and unfamiliar defects. Tiny features can be lost through 192 px resampling. There is no demonstrated process/yield improvement, no equipment control, and no validation on Lam Research data.
+The dataset is heavily imbalanced and comes from one production layer. Centering and electron-framing artifacts can remain shortcuts after border removal. The model may fail on other tools, layers, textures, magnifications and unfamiliar defects. Tiny features can be lost through 192 px resampling. Results describe held-out image segmentation; process/yield improvement and equipment control are outside the project scope.
 
 Own code: MIT. Dataset and included derived example images: CC BY 4.0 with attribution. Trained model weights are research artifacts derived from the cited data.

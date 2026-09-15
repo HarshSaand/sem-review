@@ -10,7 +10,7 @@ License: Creative Commons Attribution4.0 International (CC BY4.0), https://creat
 
 The full original archive is downloaded directly from Zenodo and not redistributed in this repository. Included held-out example inputs and expert masks originate from Carinthia-S. Predicted masks, colored overlays, panels, preprocessing arrays and measurements are transformations/derived outputs created by this project; they must not be confused with the original authors' annotations or reported results.
 
-The model is trained on a subset of the dataset and evaluated on a separate fixed image-level holdout. All dataset creators retain credit. No endorsement by the dataset authors, wafer manufacturer or Lam Research is implied.
+The model is trained on a subset of the dataset and evaluated on a separate fixed image-level holdout. All dataset creators retain credit.
 
 Archive filename: data.zip
 Archive bytes: 139225942
