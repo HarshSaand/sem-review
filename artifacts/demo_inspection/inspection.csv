@@ -1,0 +1,2 @@
+review_id,filename,status,area_pixels,coverage_fraction,region_count,review_required,model_id,units
+29c8225088264d108b5a5f8836e80183,9aa73e4447814d8aad88edfb0f2d0d70.png,pending_review,5406,0.031238443047337278,1,False,af51cda93225d557,pixels; no physical calibration

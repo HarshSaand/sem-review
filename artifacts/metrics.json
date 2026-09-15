@@ -1,0 +1,185 @@
+{
+  "test_images": 919,
+  "test_groups": 919,
+  "evaluation_grid": "Native image interior after uniform 32px crop (416x416 for 480x480 sources). Model outputs bilinearly resized from192x192, then thresholded.",
+  "unet": {
+    "dice": 0.9408777492486694,
+    "iou": 0.894858429236218,
+    "boundary_f1_2px": 0.7780445161405583,
+    "area_error_pixels": 416.73340587595214,
+    "coverage_error": 0.0024080841223416243
+  },
+  "classical": {
+    "dice": 0.7380876202281006,
+    "iou": 0.6015704961871877,
+    "boundary_f1_2px": 0.27390262327150644,
+    "area_error_pixels": 2246.590859630033,
+    "coverage_error": 0.012981872108623987
+  },
+  "equal_group_weighted_unet": {
+    "dice": 0.9408777492486694,
+    "iou": 0.894858429236218,
+    "boundary_f1_2px": 0.7780445161405583,
+    "area_error_pixels": 416.73340587595214,
+    "coverage_error": 0.0024080841223416243
+  },
+  "equal_group_weighted_classical": {
+    "dice": 0.7380876202281006,
+    "iou": 0.6015704961871877,
+    "boundary_f1_2px": 0.27390262327150644,
+    "area_error_pixels": 2246.590859630033,
+    "coverage_error": 0.012981872108623987
+  },
+  "per_class": {
+    "1": {
+      "n": 11,
+      "unet": {
+        "dice": 0.7702885708573087,
+        "iou": 0.6667692947756675,
+        "boundary_f1_2px": 0.4252115153187183,
+        "area_error_pixels": 1952.1818181818182,
+        "coverage_error": 0.011280636430876814
+      },
+      "classical": {
+        "dice": 0.27461477440015325,
+        "iou": 0.18130946977432083,
+        "boundary_f1_2px": 0.14032638718580226,
+        "area_error_pixels": 12914.636363636364,
+        "coverage_error": 0.07462692055540614
+      }
+    },
+    "2": {
+      "n": 2,
+      "unet": {
+        "dice": 0.8585692076321745,
+        "iou": 0.7530353140376518,
+        "boundary_f1_2px": 0.8243375289865131,
+        "area_error_pixels": 57.5,
+        "coverage_error": 0.0003322623890532547
+      },
+      "classical": {
+        "dice": 0.2947544983226594,
+        "iou": 0.208972972972973,
+        "boundary_f1_2px": 0.19385500842974246,
+        "area_error_pixels": 3677.0,
+        "coverage_error": 0.0212474574704142
+      }
+    },
+    "3": {
+      "n": 802,
+      "unet": {
+        "dice": 0.9385622827425275,
+        "iou": 0.8896229061119667,
+        "boundary_f1_2px": 0.7690363974422328,
+        "area_error_pixels": 252.10972568578555,
+        "coverage_error": 0.0014568100827812124
+      },
+      "classical": {
+        "dice": 0.7279248066581162,
+        "iou": 0.58148519905102,
+        "boundary_f1_2px": 0.23784124480659344,
+        "area_error_pixels": 1702.3965087281795,
+        "coverage_error": 0.009837257932277296
+      }
+    },
+    "4": {
+      "n": 58,
+      "unet": {
+        "dice": 0.9617173848628715,
+        "iou": 0.9330251790497166,
+        "boundary_f1_2px": 0.7977784424164868,
+        "area_error_pixels": 2733.1724137931033,
+        "coverage_error": 0.015793572102632113
+      },
+      "classical": {
+        "dice": 0.7766424011605202,
+        "iou": 0.6610122715886908,
+        "boundary_f1_2px": 0.23936625159776284,
+        "area_error_pixels": 9449.448275862069,
+        "coverage_error": 0.05460341320648848
+      }
+    },
+    "5": {
+      "n": 1,
+      "unet": {
+        "dice": 0.9697797832787823,
+        "iou": 0.941332510795805,
+        "boundary_f1_2px": 0.6585681978672244,
+        "area_error_pixels": 673.0,
+        "coverage_error": 0.0038889145710059164
+      },
+      "classical": {
+        "dice": 0.8512972674579078,
+        "iou": 0.74109449149997,
+        "boundary_f1_2px": 0.1532895830529674,
+        "area_error_pixels": 1812.0,
+        "coverage_error": 0.010470599112426038
+      }
+    },
+    "6": {
+      "n": 45,
+      "unet": {
+        "dice": 1.0,
+        "iou": 1.0,
+        "boundary_f1_2px": 1.0,
+        "area_error_pixels": 0.0,
+        "coverage_error": 0.0
+      },
+      "classical": {
+        "dice": 1.0,
+        "iou": 1.0,
+        "boundary_f1_2px": 1.0,
+        "area_error_pixels": 0.0,
+        "coverage_error": 0.0
+      }
+    }
+  },
+  "review_coverage": [
+    {
+      "retained_fraction": 0.25,
+      "retained_images": 229,
+      "dice": 0.9647099421970774,
+      "iou": 0.9323821212956348
+    },
+    {
+      "retained_fraction": 0.5,
+      "retained_images": 459,
+      "dice": 0.9604276165978523,
+      "iou": 0.9244632658853216
+    },
+    {
+      "retained_fraction": 0.75,
+      "retained_images": 689,
+      "dice": 0.9557587610661902,
+      "iou": 0.9160764797703539
+    },
+    {
+      "retained_fraction": 1.0,
+      "retained_images": 919,
+      "dice": 0.9408777492486693,
+      "iou": 0.894858429236218
+    }
+  ],
+  "empty_mask": {
+    "n": 45,
+    "unet_nonempty_predictions": 0,
+    "baseline_nonempty_predictions": 0
+  },
+  "model_threshold": 0.45,
+  "model_epoch": 12,
+  "selection": "Both checkpoint/threshold and baseline hyperparameters selected on validation only. Test evaluated once after training.",
+  "limitations": [
+    "Image-level grouped holdout, not a wafer/lot/factory holdout.",
+    "Class6 empty captures result from SEM misalignment; not factory clean controls.",
+    "Review score is heuristic, not calibrated uncertainty.",
+    "No reliable six-class classifier; no physical length or area calibration."
+  ],
+  "cpu_forward_latency_ms": {
+    "median": 22.280082999941442,
+    "p95": 26.14326875004735,
+    "n": 30,
+    "threads": 4,
+    "includes_preprocessing": false
+  },
+  "model_sha256": "af51cda93225d557f281036dee12fdc08cfd19e40ba4b42c415de3b6aa7ca844"
+}

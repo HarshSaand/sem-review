@@ -1,0 +1,8 @@
+Training 735 validation 246 device mps params 275161
+{"epoch": 1, "loss": 1.2581148416765275, "validation_dice": 0.7819021282897244, "threshold": 0.65, "seconds": 7.599300146102905}
+{"epoch": 2, "loss": 1.114083020917831, "validation_dice": 0.8169041188753293, "threshold": 0.75, "seconds": 4.397465944290161}
+{"epoch": 3, "loss": 1.028383170404742, "validation_dice": 0.7734898183921265, "threshold": 0.75, "seconds": 4.342264175415039}
+{"epoch": 4, "loss": 0.9347454405600025, "validation_dice": 0.8093084493569642, "threshold": 0.75, "seconds": 4.317312955856323}
+{"epoch": 5, "loss": 0.8575053753391388, "validation_dice": 0.8552983409625384, "threshold": 0.75, "seconds": 4.314115047454834}
+{"epoch": 6, "loss": 0.7987120632202395, "validation_dice": 0.8711470555507499, "threshold": 0.75, "seconds": 4.40523099899292}
+{"epoch": 7, "loss": 0.735298014456226, "validation_dice": 0.9080089043429199, "threshold": 0.75, "seconds": 4.308341979980469}

@@ -1,0 +1,51 @@
+[
+  {
+    "filename": "603981d116e24661b39d83cb7743276b",
+    "label": 1,
+    "selection": "median Dice within held-out class",
+    "dice": 0.8629785285604488,
+    "directory": "artifacts/examples/603981d116e24661b39d83cb7743276b"
+  },
+  {
+    "filename": "90c6f13b7d224c579ac0de7dfb47b924",
+    "label": 2,
+    "selection": "median Dice within held-out class",
+    "dice": 0.8836809288325091,
+    "directory": "artifacts/examples/90c6f13b7d224c579ac0de7dfb47b924"
+  },
+  {
+    "filename": "9aa73e4447814d8aad88edfb0f2d0d70",
+    "label": 3,
+    "selection": "median Dice within held-out class",
+    "dice": 0.9548115623856568,
+    "directory": "artifacts/examples/9aa73e4447814d8aad88edfb0f2d0d70"
+  },
+  {
+    "filename": "b8c10ce9679f460f84b1547bd0210329",
+    "label": 4,
+    "selection": "median Dice within held-out class",
+    "dice": 0.9814502529510961,
+    "directory": "artifacts/examples/b8c10ce9679f460f84b1547bd0210329"
+  },
+  {
+    "filename": "4085455e942a4d3fb413638a5d04d0f7",
+    "label": 5,
+    "selection": "median Dice within held-out class",
+    "dice": 0.9697797832787823,
+    "directory": "artifacts/examples/4085455e942a4d3fb413638a5d04d0f7"
+  },
+  {
+    "filename": "5cc1a08f75614d82944afdb2dc8b36f8",
+    "label": 6,
+    "selection": "median Dice within held-out class",
+    "dice": 1.0,
+    "directory": "artifacts/examples/5cc1a08f75614d82944afdb2dc8b36f8"
+  },
+  {
+    "filename": "4c50d4bd6fec445a85e3fd3202f5465f",
+    "label": 3,
+    "selection": "lowest foreground Dice",
+    "dice": 0.09188544152744631,
+    "directory": "artifacts/examples/4c50d4bd6fec445a85e3fd3202f5465f"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "core_tests": "5 passed",
+  "real_model_api": "Upload, correction, accept and ZIP export validated; original prediction remains unchanged and corrected area agrees with PNG/JSON/CSV.",
+  "browser_regression": "Two uploads; paint; dirty image switch blocked; forced correction failure keeps Accept/export disabled; retry saves; acceptance and ZIP export complete; no JavaScript errors.",
+  "browser_visual": "Full-page screenshot of actual held-out example3 prediction with919image evaluation evidence.",
+  "reviewer_fixes": [
+    "Capture immutable review targets before async writes",
+    "Busy lock during selection/reset/save/accept",
+    "Dirty-edit gating on failure",
+    "Label original model flags distinctly from corrected measurements",
+    "Validate checkpoint crop against preprocessing"
+  ],
+  "model_sha256": "af51cda93225d557f281036dee12fdc08cfd19e40ba4b42c415de3b6aa7ca844"
+}

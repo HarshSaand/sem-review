@@ -1,0 +1,22 @@
+{
+  "filename": "4085455e942a4d3fb413638a5d04d0f7",
+  "label": 5,
+  "group_id": 291,
+  "split": "test",
+  "review_score": 0.019327282905578613,
+  "review_required": false,
+  "unet_dice": 0.9697797832787823,
+  "unet_iou": 0.941332510795805,
+  "unet_boundary_f1_2px": 0.6585681978672244,
+  "unet_area_error_pixels": 673,
+  "unet_coverage_error": 0.0038889145710059164,
+  "unet_target_area": 15398,
+  "unet_predicted_area": 16071,
+  "baseline_dice": 0.8512972674579078,
+  "baseline_iou": 0.74109449149997,
+  "baseline_boundary_f1_2px": 0.1532895830529674,
+  "baseline_area_error_pixels": 1812,
+  "baseline_coverage_error": 0.010470599112426038,
+  "baseline_target_area": 15398,
+  "baseline_predicted_area": 13586
+}

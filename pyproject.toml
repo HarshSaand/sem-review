@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sem-review"
+version = "0.1.0"
+description = "Evidence-first semiconductor SEM defect segmentation and review"
+requires-python = ">=3.11"
+dependencies = ["torch>=2.5", "numpy", "pandas", "Pillow", "scipy", "scikit-learn", "fastapi", "uvicorn", "python-multipart", "matplotlib"]
+
+[project.optional-dependencies]
+test = ["pytest", "httpx"]
+
+[tool.setuptools]
+packages = ["semreview"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

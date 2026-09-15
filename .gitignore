@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.pytest_cache/
+data/
+reviews/
+*.zip
+.DS_Store
+
+artifacts/initial_grouping_diagnostic/model.pt
+artifacts/initial_grouping_diagnostic/near_duplicate_pairs.json
+artifacts/initial_grouping_diagnostic/split_manifest.csv
+
+artifacts/server.log

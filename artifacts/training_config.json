@@ -1,0 +1,12 @@
+{
+  "device": "mps",
+  "epochs": 12,
+  "batch_size": 24,
+  "seed": 41,
+  "seconds": 196.1029748916626,
+  "parameters": 275161,
+  "model": "TinyUNet width12 GroupNorm",
+  "loss": "BCE plus soft Dice",
+  "sampling": "inverse square root of training label frequency",
+  "selection": "highest validation per-image Dice across fixed thresholds; test untouched"
+}
