@@ -1,5 +1,7 @@
 # SEM Review
 
+[Read the project report (PDF)](docs/PROJECT_REPORT.pdf) · [Explore the explanation and flow diagram](docs/PROJECT_REPORT.md)
+
 A working semiconductor SEM inspection tool: upload an image, segment defect regions, edit or accept the mask, and export a traceable inspection record. Built by Harsh Saand using the public Carinthia-S dataset.
 
 The application produces **binary masks, overlays, pixel-area measurements, connected-region records, correction revisions, and CSV/JSON/PNG exports**. It is an experimental review assistant, not a fab disposition system. The model does not infer nanometres or claim reliable six-class defect classification.
