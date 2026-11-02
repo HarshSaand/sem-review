@@ -84,7 +84,9 @@ async def inspect(file:UploadFile=File(...)):
     save_report(p,report);return public_report(p)
 
 @app.get('/api/reviews/{key}')
-def get_review(key:str):return public_report(folder(key))
+def get_review(key:str):
+    with LOCK:
+        return public_report(folder(key))
 
 @app.post('/api/reviews/{key}/accept')
 def accept(key:str):
@@ -120,9 +122,12 @@ def artifact(key:str,name:str):
 @app.get('/api/reviews/{key}/export')
 def export(key:str):
     p=folder(key);buf=io.BytesIO()
-    with zipfile.ZipFile(buf,'w',zipfile.ZIP_DEFLATED) as z:
-        for file in p.iterdir():
-            if file.is_file():z.write(file,file.name)
-        z.writestr('README.txt','SEM Review inspection export\nmask.png is the current human-reviewable mask; prediction.png preserves the original model output.\nPixel area is measured only inside crop_box_xyxy; excluded borders are not assessed.\nNo nanometre calibration or production disposition is claimed.\n')
+    # Corrections write several files. Export one consistent revision rather than
+    # mixing a new mask with an older report while another request is editing it.
+    with LOCK:
+        with zipfile.ZipFile(buf,'w',zipfile.ZIP_DEFLATED) as z:
+            for file in p.iterdir():
+                if file.is_file():z.write(file,file.name)
+            z.writestr('README.txt','SEM Review inspection export\nmask.png is the current human-reviewable mask; prediction.png preserves the original model output.\nPixel area is measured only inside crop_box_xyxy; excluded borders are not assessed.\nNo nanometre calibration or production disposition is claimed.\n')
     buf.seek(0)
     return StreamingResponse(buf,media_type='application/zip',headers={'Content-Disposition':f'attachment; filename="sem-review-{key[:8]}.zip"'})
