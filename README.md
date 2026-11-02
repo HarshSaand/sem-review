@@ -88,6 +88,14 @@ curl -o inspection.zip http://127.0.0.1:8766/api/reviews/REVIEW_ID/export
 
 A correction must match the original image dimensions. The service validates image size and clamps corrections to the inspected crop. `prediction.png` is immutable; `mask.png` is the current revision. Exports distinguish pending, accepted and corrected records.
 
+### Serving reliability checks
+
+The test suite now exercises the shipped CPU checkpoint with independently generated, non-square RGB uploads, as well as the original core tests. It checks the full upload, correction, acceptance and ZIP-export workflow; preserved predictions and revision history; malformed and oversized inputs; concurrent upload isolation; and consistent export snapshots while a review is being edited. Exports acquire the same lock as corrections so a packet cannot mix a new mask with an older report.
+
+Report reads also wait for an in-progress correction to finish, so clients cannot read partially written JSON.
+
+Run `python -m pytest -q`. The local verification completed **13 tests**. The new GitHub Actions workflow installs a CPU runtime and runs this suite on Linux. The generated input images test software behaviour only, not segmentation accuracy; the 919-image held-out evaluation above remains the accuracy evidence. Health/model identity is exposed at `/api/health`, and each inspection already records its model ID and inference timing. These are local serving checks, not cloud, distributed-training or clinical-deployment validation.
+
 ## Evidence and limitations
 
 Machine-readable results are in `artifacts/metrics.json`, with per-image support in `artifacts/test_per_image.csv`. `artifacts/heldout_panels.png` compares held-out inputs, expert masks, U-Net output and the classical baseline. Examples are selected as the median-scoring image in each supported test class plus the lowest-Dice foreground failure; they are not a gallery of only the best cases.

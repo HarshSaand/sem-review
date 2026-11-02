@@ -11,3 +11,4 @@ artifacts/initial_grouping_diagnostic/near_duplicate_pairs.json
 artifacts/initial_grouping_diagnostic/split_manifest.csv
 
 artifacts/server.log
+artifacts/serving-tests.xml
